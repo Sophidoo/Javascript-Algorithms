@@ -31,10 +31,33 @@ console.log(numbers)
 
 
 // vowels and consonants
-var string = "ada"
+var string = "adadd"
 var vowels = "aeiou"
 var consonant = "bcdfghjklmnpqrstvwxyz"
-for(i = 0; i < string.length; i++){
-    
+var vowelCount = 0
+var consonantCount = 0
+for(i = 0; i < vowels.length; i++){
+    for(j = 0; j < string.length; j++){
+        if(string[j].includes(vowels[i])){
+            vowelCount++
+        }
+    }
+}
+for(i = 0; i < consonant.length; i++){
+    for(j = 0; j < string.length; j++){
+        if(string[j].includes(consonant[i])){
+            consonantCount++
+        }
+    }
+}
+if(vowelCount > consonantCount){
+    console.log("Vowel Wins")
+}else if(consonantCount > vowelCount){
+    console.log("Consonant Wins")
+}else{
+    console.log("Draw")
 }
 
+
+//second largest and second smallest
+var 
