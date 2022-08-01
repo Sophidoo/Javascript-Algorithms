@@ -1,19 +1,40 @@
 //palindrome
-let sampleWord = "abbak"
-let string = ""
-let stringReverse = ""
-for(i = 0; i < sampleWord.length; i++){
-    string += sampleWord[i]
-    console.log(string)
-    for(j = sampleWord.length -1; j >= 0; j--){
-        stringReverse += sampleWord[j]
-        console.log(stringReverse)
+var sampleWord = "abba"
+var stringReverse = ""
+for(j = sampleWord.length -1; j >= 0; j--){
+    stringReverse += sampleWord[j].toLowerCase()
+}
+// console.log(stringReverse)
+if(sampleWord.toLowerCase() == stringReverse){
+    console.log("true")
+    // return "true"
+}else{
+    console.log("false")
+    // return "false"
+}
+
+
+//index of two numbers whose sum is equal to target
+var arr = [2, 10, 5, 4]
+var numbers = []
+var target = 7
+for (let i = 0; i < arr.length; i++){
+    for( let j = 0; j < arr.length; j++){
+        if(arr[i] + arr[j] == target){
+           var targetNumbers = i
+        numbers.push(targetNumbers)
+        break;
     }
 }
-let s = string 
-let r = stringReverse
-if (s === r){
-    return "true"
-}else{
-    return "false"
 }
+console.log(numbers)
+
+
+// vowels and consonants
+var string = "ada"
+var vowels = "aeiou"
+var consonant = "bcdfghjklmnpqrstvwxyz"
+for(i = 0; i < string.length; i++){
+    
+}
+
