@@ -60,4 +60,11 @@ if(vowelCount > consonantCount){
 
 
 //second largest and second smallest
-var 
+var numberArray = [2, 6, 10, 3, 7, 9, 1]
+var solvedArray = []
+numberArray.sort(function(a, b){
+    return a-b
+})
+solvedArray.push(numberArray[1])
+solvedArray.push(numberArray[numberArray.length-2])
+console.log(solvedArray)
